@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommendations</title>
+</head>
+<body>
+    <h2>Uploaded Image</h2>
+    <img src="{{ uploaded_file.url }}" alt="Uploaded Image">
+
+    <h2>Content-based Recommendations</h2>
+    <div>
+        {% for image_url in recommended_images_content_based %}
+            <img src="{{ image_url }}" alt="Recommended Image">
+        {% endfor %}
+    </div>
+</body>
+</html>
